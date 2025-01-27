@@ -1,0 +1,12 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+        <lightning-accordion allow-multiple-sections-open>
+        <template for:each={sectionData} for:item="section" for:index="index">
+                <lightning-accordion-section key={section.Id} name={section.Name} is-active="true" label={section.Name}>
+                    <c-functional-dashboard-section key={section.Id} tile-count = {section.Queries__r}>{section.name}
+                    </c-functional-dashboard-section>
+                </lightning-accordion-section>
+        </template>
+    </lightning-accordion>
+    </lightning-card>
+</template>

@@ -1,0 +1,16 @@
+<template>
+    <template for:each={contactsList} for:item="con" for:index="index">
+       <c-functional-dashboard-chart key={con} contacts-list = {contactsList}>
+            {con}
+       </c-functional-dashboard-chart>
+    </template>
+    <div class="container">
+        <template for:each={tileCount} for:item="tile" for:index="index">
+            <div class="item" key={tile.Id}>
+                <c-functional-dashboard-tiles key={tile.Id} record = {tile}>
+                    {con}
+                </c-functional-dashboard-tiles>
+            </div>
+        </template>
+    </div>
+</template>

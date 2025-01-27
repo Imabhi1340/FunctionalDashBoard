@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Section_Contents__c</fullName>
+    <description>Which all content will be present in a section</description>
+    <label>Section Contents</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Chart Graph</fullName>
+                <default>false</default>
+                <label>Chart Graph</label>
+            </value>
+            <value>
+                <fullName>Donut Chart</fullName>
+                <default>false</default>
+                <label>Donut Chart</label>
+            </value>
+            <value>
+                <fullName>Tiles</fullName>
+                <default>false</default>
+                <label>Tiles</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

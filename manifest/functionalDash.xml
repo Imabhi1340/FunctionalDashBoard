@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>FunctionalDashboard1</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>Functional_Dashboard</members>
+		<name>CustomApplication</name>
+	</types>
+	<types>
+		<members>Query__c.Fields__c</members>
+		<members>Query__c.Fuctional_number__c</members>
+		<members>Query__c.Object_Name__c</members>
+		<members>Query__c.Placement__c</members>
+		<members>Query__c.Query_Name__c</members>
+		<members>Query__c.Section__c</members>
+		<members>Query__c.Show_DataTable__c</members>
+		<members>Section__c.Section_Contents__c</members>
+		<members>Section__c.Section_Name__c</members>
+		<members>Section__c.Section_Order__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Query__c</members>
+		<members>Section__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>Query__c</members>
+		<members>Section__c</members>
+		<name>CustomTab</name>
+	</types>
+	<types>
+		<members>Functional_Dashboard</members>
+		<members>Functional_Dashboard_UtilityBar</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>Query__c-Query Layout</members>
+		<members>Section__c-Section Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>functionaDashboardWrapper</members>
+		<members>functionalDashboardChart</members>
+		<members>functionalDashboardSection</members>
+		<members>functionalDashboardTiles</members>
+		<name>LightningComponentBundle</name>
+	</types>
+	<version>62.0</version>
+</Package>
