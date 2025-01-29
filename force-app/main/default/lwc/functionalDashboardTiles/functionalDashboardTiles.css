@@ -1,0 +1,4 @@
+.slds-table_fixed-layout {
+    max-height: 400px; /* Set height for the scrollable table */
+    overflow-y: auto;
+}
