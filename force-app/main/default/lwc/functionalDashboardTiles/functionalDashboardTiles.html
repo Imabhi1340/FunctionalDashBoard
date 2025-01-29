@@ -1,3 +1,36 @@
 <template>
+    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse slds-float_right" onclick={openDataTable} title="Open">
+        <lightning-icon icon-name="utility:open" size="small" alternative-text="open" class="slds-button__icon slds-button__icon_large"></lightning-icon>
+        <span class="slds-assistive-text">Close</span>
+    </button>
     {count}
+    <template if:true={showDataTale}>
+        <div class="custom-modal">
+            <section role="dialog" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header">
+                        <span class="slds-modal__close">
+                            <lightning-icon icon-name="utility:close" variant="inverse" alternative-text="close" onclick={closeModal}></lightning-icon>
+                        </span>
+                        <h2 class="slds-text-heading_medium slds-hyphenate">Modal Header</h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_small slds-table_fixed-layout">
+                        <lightning-datatable
+                            key-field="id"
+                            data={data}
+                            show-row-number-column
+                            hide-checkbox-column
+                            columns={columnsList}
+                            onsort ={handleSort}
+                            enable-infinite-loading
+                            load-more
+                            onloadmore={loadMoreData}
+                            sorted-by={fieldName}
+                            sort-direction={sortDirection}>
+                        </lightning-datatable>
+                    </div>  
+                </div>
+            </section>
+        </div>
+    </template>
 </template>
